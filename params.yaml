@@ -1,0 +1,8 @@
+data:
+  srcpath: src/
+  models: models/
+  reports: reports/
+  plots: dvclive/plots/
+  metrics: metrics/
+  mod: lr
+  data_sets:  data/
