@@ -1,0 +1,2955 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_11236535</BlastOutput_query-ID>
+  <BlastOutput_query-def>P01275|GCG_HUMAN Glucagon-like peptide 1(7-37)</BlastOutput_query-def>
+  <BlastOutput_query-len>30</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>PAM30</Parameters_matrix>
+      <Parameters_expect>200000</Parameters_expect>
+      <Parameters_gap-open>9</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_11236535</Iteration_query-ID>
+  <Iteration_query-def>P01275|GCG_HUMAN Glucagon-like peptide 1(7-37)</Iteration_query-def>
+  <Iteration_query-len>30</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>pdb|1D0R|A</Hit_id>
+  <Hit_def>Chain A, GLUCAGON-LIKE PEPTIDE-1-(7-36)-AMIDE [Homo sapiens] &gt;pdb|6X18|P Chain P, Glucagon [Homo sapiens] &gt;pdb|7DUQ|P Chain P, Glucagon-like peptide 1 [Homo sapiens]</Hit_def>
+  <Hit_accession>1D0R_A</Hit_accession>
+  <Hit_len>30</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>2.4915e-23</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>pdb|3IOL|B</Hit_id>
+  <Hit_def>Chain B, Glucagon [Homo sapiens] &gt;pdb|5VAI|P Chain P, Glucagon-like peptide 1 [Homo sapiens] &gt;pdb|6VCB|P Chain P, Glucagon-like peptide 1 [Homo sapiens]</Hit_def>
+  <Hit_accession>3IOL_B</Hit_accession>
+  <Hit_len>31</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>2.81033e-23</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|AAT00451.1|</Hit_id>
+  <Hit_def>glucagon, partial [Capra hircus]</Hit_def>
+  <Hit_accession>AAT00451</Hit_accession>
+  <Hit_len>45</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>1.36346e-22</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>pdb|9EBO|P</Hit_id>
+  <Hit_def>Chain P, Glucagon-like peptide 1(7-36) [synthetic construct]</Hit_def>
+  <Hit_accession>9EBO_P</Hit_accession>
+  <Hit_len>30</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.3772</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>3.6427e-22</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSXYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVS YLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>pdb|4APD|A</Hit_id>
+  <Hit_def>Chain A, Glucagon-like peptide 1(7-37) [Homo sapiens]</Hit_def>
+  <Hit_accession>4APD_A</Hit_accession>
+  <Hit_len>31</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>94.3772</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>4.10321e-22</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVRGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLV GR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|UYD62660.1|</Hit_id>
+  <Hit_def>Usp45-LEISS-His-EK-GLP1 [synthetic construct]</Hit_def>
+  <Hit_accession>UYD62660</Hit_accession>
+  <Hit_len>89</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>3.46395e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>88</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>pdb|7KI1|P</Hit_id>
+  <Hit_def>Chain P, Taspoglutide [synthetic construct]</Hit_def>
+  <Hit_accession>7KI1_P</Hit_accession>
+  <Hit_len>31</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.4081</Hsp_bit-score>
+      <Hsp_score>208</Hsp_score>
+      <Hsp_evalue>5.97792e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HXEGTFTSDVSSYLEGQAAKEFIAWLVKXR</Hsp_hseq>
+      <Hsp_midline>H EGTFTSDVSSYLEGQAAKEFIAWLVK R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>pdb|4ZGM|B</Hit_id>
+  <Hit_def>Chain B, Semaglutide peptide backbone; 8Aib,34R-GLP-1(7-37)-OH [Homo sapiens] &gt;pdb|7KI0|P Chain P, Semaglutide [synthetic construct]</Hit_def>
+  <Hit_accession>4ZGM_B</Hit_accession>
+  <Hit_len>31</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>91.4081</Hsp_bit-score>
+      <Hsp_score>208</Hsp_score>
+      <Hsp_evalue>5.97792e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HXEGTFTSDVSSYLEGQAAKEFIAWLVRGR</Hsp_hseq>
+      <Hsp_midline>H EGTFTSDVSSYLEGQAAKEFIAWLV GR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>pdb|9IVG|P</Hit_id>
+  <Hit_def>Chain P, GLP-1(9-36) [Homo sapiens] &gt;pdb|9IVM|P Chain P, GLP-1(9-36) [Homo sapiens]</Hit_def>
+  <Hit_accession>9IVG_P</Hit_accession>
+  <Hit_len>28</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.984</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>6.14695e-21</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>28</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>28</Hsp_align-len>
+      <Hsp_qseq>EGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>EGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>EGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>dbj|BAW32319.1|</Hit_id>
+  <Hit_def>glucagon, partial [Felis catus]</Hit_def>
+  <Hit_accession>BAW32319</Hit_accession>
+  <Hit_len>123</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>7.89381e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>46</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|KAI4544151.1|</Hit_id>
+  <Hit_def>hypothetical protein MG293_004417 [Ovis ammon polii]</Hit_def>
+  <Hit_accession>KAI4544151</Hit_accession>
+  <Hit_len>1736</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.60075e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>827</Hsp_hit-from>
+      <Hsp_hit-to>856</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|KAH0514746.1|</Hit_id>
+  <Hit_def>Prolyl endopeptidase FAP [Microtus ochrogaster]</Hit_def>
+  <Hit_accession>KAH0514746</Hit_accession>
+  <Hit_len>1236</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.61166e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>518</Hsp_hit-from>
+      <Hsp_hit-to>547</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>emb|CAI9155957.1|</Hit_id>
+  <Hit_def>unnamed protein product [Rangifer tarandus platyrhynchus]</Hit_def>
+  <Hit_accession>CAI9155957</Hit_accession>
+  <Hit_len>1110</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.61596e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|MXQ87940.1|</Hit_id>
+  <Hit_def>hypothetical protein [Bos mutus]</Hit_def>
+  <Hit_accession>MXQ87940</Hit_accession>
+  <Hit_len>1108</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.61604e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>174</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|KAI4575019.1|</Hit_id>
+  <Hit_def>hypothetical protein MJT46_004298, partial [Ovis ammon polii x Ovis aries]</Hit_def>
+  <Hit_accession>KAI4575019</Hit_accession>
+  <Hit_len>951</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.62302e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|KAL4688356.1|</Hit_id>
+  <Hit_def>hypothetical protein H8959_004608 [Pygathrix nigripes]</Hit_def>
+  <Hit_accession>KAL4688356</Hit_accession>
+  <Hit_len>733</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.63766e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>652</Hsp_hit-from>
+      <Hsp_hit-to>681</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|EGW01900.1|</Hit_id>
+  <Hit_def>Seprase [Cricetulus griseus]</Hit_def>
+  <Hit_accession>EGW01900</Hit_accession>
+  <Hit_len>561</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.65725e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>480</Hsp_hit-from>
+      <Hsp_hit-to>509</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gb|KAL6071223.1|</Hit_id>
+  <Hit_def>hypothetical protein STEG23_038334, partial [Scotinomys teguina]</Hit_def>
+  <Hit_accession>KAL6071223</Hit_accession>
+  <Hit_len>531</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.66197e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>450</Hsp_hit-from>
+      <Hsp_hit-to>479</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gb|ELK04648.1|</Hit_id>
+  <Hit_def>Seprase [Pteropus alecto]</Hit_def>
+  <Hit_accession>ELK04648</Hit_accession>
+  <Hit_len>459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.6758e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>378</Hsp_hit-from>
+      <Hsp_hit-to>407</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|ERE69746.1|</Hit_id>
+  <Hit_def>glucagon-like protein [Cricetulus griseus]</Hit_def>
+  <Hit_accession>ERE69746</Hit_accession>
+  <Hit_len>282</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.73984e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gb|KAK2108892.1|</Hit_id>
+  <Hit_def>hypothetical protein P7K49_014057 [Saguinus oedipus]</Hit_def>
+  <Hit_accession>KAK2108892</Hit_accession>
+  <Hit_len>279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.74162e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>198</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|XP_070216815.1|</Hit_id>
+  <Hit_def>pro-glucagon [Bos mutus]</Hit_def>
+  <Hit_accession>XP_070216815</Hit_accession>
+  <Hit_len>271</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.74658e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>189</Hsp_hit-from>
+      <Hsp_hit-to>218</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_010360153.1|</Hit_id>
+  <Hit_def>glucagon [Rhinopithecus roxellana] &gt;ref|XP_017746454.1| PREDICTED: glucagon [Rhinopithecus bieti] &gt;ref|XP_033087190.1| glucagon [Trachypithecus francoisi]</Hit_def>
+  <Hit_accession>XP_010360153</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|XP_054334174.2|</Hit_id>
+  <Hit_def>pro-glucagon [Pongo pygmaeus]</Hit_def>
+  <Hit_accession>XP_054334174</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|XP_054965409.2|</Hit_id>
+  <Hit_def>pro-glucagon [Pan paniscus]</Hit_def>
+  <Hit_accession>XP_054965409</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_002749449.1|</Hit_id>
+  <Hit_def>pro-glucagon [Callithrix jacchus]</Hit_def>
+  <Hit_accession>XP_002749449</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|XP_012511290.1|</Hit_id>
+  <Hit_def>PREDICTED: glucagon [Propithecus coquereli]</Hit_def>
+  <Hit_accession>XP_012511290</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gb|EAX11358.1|</Hit_id>
+  <Hit_def>glucagon, isoform CRA_c [Homo sapiens]</Hit_def>
+  <Hit_accession>EAX11358</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_003907591.1|</Hit_id>
+  <Hit_def>glucagon [Papio anubis] &gt;ref|XP_011846394.1| PREDICTED: glucagon [Mandrillus leucophaeus] &gt;ref|XP_011893949.1| PREDICTED: glucagon [Cercocebus atys] &gt;ref|XP_025259660.1| glucagon isoform X1 [Theropithecus gelada]</Hit_def>
+  <Hit_accession>XP_003907591</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75183e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gb|KAL0626055.1|</Hit_id>
+  <Hit_def>Glucagon [Plecturocebus cupreus]</Hit_def>
+  <Hit_accession>KAL0626055</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75251e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gb|KAL4841113.1|</Hit_id>
+  <Hit_def>hypothetical protein H8958_019708 [Nasalis larvatus]</Hit_def>
+  <Hit_accession>KAL4841113</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75251e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gb|KAL4675086.1|</Hit_id>
+  <Hit_def>hypothetical protein H8957_008924 [Semnopithecus entellus]</Hit_def>
+  <Hit_accession>KAL4675086</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75251e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|XP_006879424.1|</Hit_id>
+  <Hit_def>PREDICTED: glucagon [Elephantulus edwardii]</Hit_def>
+  <Hit_accession>XP_006879424</Hit_accession>
+  <Hit_len>262</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75251e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_023073103.1|</Hit_id>
+  <Hit_def>glucagon [Piliocolobus tephrosceles]</Hit_def>
+  <Hit_accession>XP_023073103</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7532e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>179</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>ref|XP_053453307.1|</Hit_id>
+  <Hit_def>pro-glucagon [Nycticebus coucang]</Hit_def>
+  <Hit_accession>XP_053453307</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7532e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>179</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>ref|XP_019492374.1|</Hit_id>
+  <Hit_def>PREDICTED: glucagon [Hipposideros armiger]</Hit_def>
+  <Hit_accession>XP_019492374</Hit_accession>
+  <Hit_len>260</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.75389e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>178</Hsp_hit-from>
+      <Hsp_hit-to>207</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>ref|XP_036900638.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: pro-glucagon [Sturnira hondurensis]</Hit_def>
+  <Hit_accession>XP_036900638</Hit_accession>
+  <Hit_len>256</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7567e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>175</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>pdb|5OTU|B</Hit_id>
+  <Hit_def>Chain B, Glucagon [Homo sapiens] &gt;pdb|5OTU|D Chain D, Glucagon [Homo sapiens]</Hit_def>
+  <Hit_accession>5OTU_B</Hit_accession>
+  <Hit_len>31</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.984</Hsp_bit-score>
+      <Hsp_score>207</Hsp_score>
+      <Hsp_evalue>8.76337e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HXEGXFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>H EG FTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>ref|XP_004375483.1|</Hit_id>
+  <Hit_def>pro-glucagon [Trichechus manatus latirostris]</Hit_def>
+  <Hit_accession>XP_004375483</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.76728e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>160</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gb|KAL1785914.1|</Hit_id>
+  <Hit_def>glucagon [Sigmodon hispidus]</Hit_def>
+  <Hit_accession>KAL1785914</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.76809e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gb|KAF6494995.1|</Hit_id>
+  <Hit_def>glucagon [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>KAF6494995</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.76809e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gb|KAL1785915.1|</Hit_id>
+  <Hit_def>glucagon [Sigmodon hispidus]</Hit_def>
+  <Hit_accession>KAL1785915</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7689e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gb|EDL26988.1|</Hit_id>
+  <Hit_def>glucagon, isoform CRA_a [Mus musculus]</Hit_def>
+  <Hit_accession>EDL26988</Hit_accession>
+  <Hit_len>240</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7689e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gb|KAI5941756.1|</Hit_id>
+  <Hit_def>Pro-glucagon [Manis javanica]</Hit_def>
+  <Hit_accession>KAI5941756</Hit_accession>
+  <Hit_len>238</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.77054e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>156</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>emb|CAM9600354.1|</Hit_id>
+  <Hit_def>unnamed protein product [Rangifer tarandus platyrhynchus]</Hit_def>
+  <Hit_accession>CAM9600354</Hit_accession>
+  <Hit_len>237</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.77137e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>156</Hsp_hit-from>
+      <Hsp_hit-to>185</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gb|KAI5220287.1|</Hit_id>
+  <Hit_def>Pro-Glucagon [Manis pentadactyla]</Hit_def>
+  <Hit_accession>KAI5220287</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.77476e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>180</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>dbj|GAB1286367.1|</Hit_id>
+  <Hit_def>Pro-glucagon [Apodemus speciosus]</Hit_def>
+  <Hit_accession>GAB1286367</Hit_accession>
+  <Hit_len>221</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.78567e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gb|XDA72638.1|</Hit_id>
+  <Hit_def>hypothetical protein R6Z07_002962 [Ovis aries] &gt;gb|XDC51726.1| hypothetical protein R6Z07M_002908 [Ovis aries] &gt;gb|XDC71744.1| hypothetical protein R6Z07F_002917 [Ovis aries]</Hit_def>
+  <Hit_accession>XDA72638</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.78859e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>136</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gb|MBW03110.1|</Hit_id>
+  <Hit_def>Glucagon [Eschrichtius robustus]</Hit_def>
+  <Hit_accession>MBW03110</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.79034e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>96</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|XP_025259661.1|</Hit_id>
+  <Hit_def>glucagon isoform X2 [Theropithecus gelada]</Hit_def>
+  <Hit_accession>XP_025259661</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7926e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>181</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>ref|XP_063139195.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Rattus norvegicus]</Hit_def>
+  <Hit_accession>XP_063139195</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.7926e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>132</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>ref|XP_063139196.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X2 [Rattus norvegicus]</Hit_def>
+  <Hit_accession>XP_063139196</Hit_accession>
+  <Hit_len>213</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.79363e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>132</Hsp_hit-from>
+      <Hsp_hit-to>161</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>emb|CAN8373153.1|</Hit_id>
+  <Hit_def>unnamed protein product [Rangifer tarandus]</Hit_def>
+  <Hit_accession>CAN8373153</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.79571e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>ref|XP_043853628.1|</Hit_id>
+  <Hit_def>pro-glucagon [Dromiciops gliroides]</Hit_def>
+  <Hit_accession>XP_043853628</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.80332e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>gb|KAF0881938.1|</Hit_id>
+  <Hit_def>SEPR endopeptidase, partial [Crocuta crocuta]</Hit_def>
+  <Hit_accession>KAF0881938</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.80559e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>ref|XP_053775411.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Desmodus rotundus]</Hit_def>
+  <Hit_accession>XP_053775411</Hit_accession>
+  <Hit_len>201</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.80674e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>119</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>gb|KAF6450187.1|</Hit_id>
+  <Hit_def>glucagon [Molossus molossus]</Hit_def>
+  <Hit_accession>KAF6450187</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.80907e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>ref|XP_047626392.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Phacochoerus africanus]</Hit_def>
+  <Hit_accession>XP_047626392</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.80907e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>86</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>ref|XP_032493338.1|</Hit_id>
+  <Hit_def>glucagon isoform X1 [Phocoena sinus]</Hit_def>
+  <Hit_accession>XP_032493338</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.81025e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>ref|XP_040085169.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Oryx dammah]</Hit_def>
+  <Hit_accession>XP_040085169</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.81025e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>ref|XP_040085170.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X2 [Oryx dammah]</Hit_def>
+  <Hit_accession>XP_040085170</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.81145e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>gb|OWJ99916.1|</Hit_id>
+  <Hit_def>GCG [Cervus elaphus hippelaphus]</Hit_def>
+  <Hit_accession>OWJ99916</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.81145e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>116</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>32.8751</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>246.422</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>26</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>26</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWL</Hsp_qseq>
+      <Hsp_hseq>HADGSFSDEMSTVLDSLATRDFINWL</Hsp_hseq>
+      <Hsp_midline>HA+G F  + S  L+  A  +FI WL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>63</Hit_num>
+  <Hit_id>gb|KAB0395743.1|</Hit_id>
+  <Hit_def>hypothetical protein E2I00_001925, partial [Balaenoptera physalus]</Hit_def>
+  <Hit_accession>KAB0395743</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83039e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>64</Hit_num>
+  <Hit_id>gb|KAF5910774.1|</Hit_id>
+  <Hit_def>hypothetical protein HPG69_004863, partial [Diceros bicornis minor]</Hit_def>
+  <Hit_accession>KAF5910774</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83039e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>65</Hit_num>
+  <Hit_id>ref|XP_047403037.1|</Hit_id>
+  <Hit_def>LOW QUALITY PROTEIN: pro-glucagon [Sciurus carolinensis]</Hit_def>
+  <Hit_accession>XP_047403037</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83039e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>31.1785</Hsp_bit-score>
+      <Hsp_score>66</Hsp_score>
+      <Hsp_evalue>935.577</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>27</Hsp_query-to>
+      <Hsp_hit-from>149</Hsp_hit-from>
+      <Hsp_hit-to>175</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>27</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLV</Hsp_qseq>
+      <Hsp_hseq>HADGSFSDEMNTILDNLATRDFINWLI</Hsp_hseq>
+      <Hsp_midline>HA+G F  +    L+  A  +FI WL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>66</Hit_num>
+  <Hit_id>gb|EHH21416.1|</Hit_id>
+  <Hit_def>hypothetical protein EGK_04477 [Macaca mulatta] &gt;gb|EHH54900.1| hypothetical protein EGM_04002 [Macaca fascicularis]</Hit_def>
+  <Hit_accession>EHH21416</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83039e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>130</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>67</Hit_num>
+  <Hit_id>ref|XP_001366816.2|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Monodelphis domestica]</Hit_def>
+  <Hit_accession>XP_001366816</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83168e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>28.6336</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>6916.6</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>26</Hsp_query-to>
+      <Hsp_hit-from>147</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>26</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWL</Hsp_qseq>
+      <Hsp_hseq>HADGSFSDEMNTVLDTLATRDFINWL</Hsp_hseq>
+      <Hsp_midline>HA+G F  +    L+  A  +FI WL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>68</Hit_num>
+  <Hit_id>gb|AAP36175.1|</Hit_id>
+  <Hit_def>Homo sapiens glucagon, partial [synthetic construct] &gt;gb|AAX29464.1| glucagon, partial [synthetic construct] &gt;gb|AAX29465.1| glucagon, partial [synthetic construct]</Hit_def>
+  <Hit_accession>AAP36175</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83168e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>69</Hit_num>
+  <Hit_id>ref|XP_045684318.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Phyllostomus hastatus]</Hit_def>
+  <Hit_accession>XP_045684318</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>70</Hit_num>
+  <Hit_id>ref|XP_036740225.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Manis pentadactyla]</Hit_def>
+  <Hit_accession>XP_036740225</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>71</Hit_num>
+  <Hit_id>ref|XP_044096859.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Neogale vison]</Hit_def>
+  <Hit_accession>XP_044096859</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>72</Hit_num>
+  <Hit_id>sp|P06883.1|</Hit_id>
+  <Hit_def>RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Rattus norvegicus] &gt;gb|AAA41235.1| pre-proglucagon [Rattus norvegicus]</Hit_def>
+  <Hit_accession>P06883</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>73</Hit_num>
+  <Hit_id>ref|XP_048200237.1|</Hit_id>
+  <Hit_def>pro-glucagon [Perognathus longimembris pacificus]</Hit_def>
+  <Hit_accession>XP_048200237</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>74</Hit_num>
+  <Hit_id>ref|XP_045875323.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Meles meles]</Hit_def>
+  <Hit_accession>XP_045875323</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>75</Hit_num>
+  <Hit_id>ref|XP_073097661.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Manis javanica]</Hit_def>
+  <Hit_accession>XP_073097661</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>76</Hit_num>
+  <Hit_id>ref|XP_040827975.1|</Hit_id>
+  <Hit_def>pro-glucagon [Ochotona curzoniae]</Hit_def>
+  <Hit_accession>XP_040827975</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>77</Hit_num>
+  <Hit_id>ref|NP_776341.1|</Hit_id>
+  <Hit_def>pro-glucagon precursor [Bos taurus] &gt;ref|XP_010857264.1| PREDICTED: glucagon isoform X1 [Bison bison bison] &gt;ref|XP_027379284.1| glucagon isoform X1 [Bos indicus x Bos taurus] &gt;ref|XP_061292750.1| pro-glucagon isoform X1 [Bos javanicus] &gt;sp|P01272.1| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Bos taurus] &gt;gb|AAA30538.1| preproglucagon [Bos taurus] &gt;gb|AAI02222.1| Glucagon [Bos taurus] &gt;tpg|DAA32664.1| TPA: glucagon [Bos taurus]</Hit_def>
+  <Hit_accession>NP_776341</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>78</Hit_num>
+  <Hit_id>ref|XP_048282003.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Myodes glareolus]</Hit_def>
+  <Hit_accession>XP_048282003</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>79</Hit_num>
+  <Hit_id>ref|XP_040601386.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Mesocricetus auratus] &gt;ref|XP_040601387.1| pro-glucagon isoform X1 [Mesocricetus auratus]</Hit_def>
+  <Hit_accession>XP_040601386</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>80</Hit_num>
+  <Hit_id>ref|XP_004629926.1|</Hit_id>
+  <Hit_def>glucagon isoform X1 [Octodon degus] &gt;sp|P22890.1| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Octodon degus] &gt;gb|AAA40588.1| glucagon [Octodon degus]</Hit_def>
+  <Hit_accession>XP_004629926</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>81</Hit_num>
+  <Hit_id>ref|NP_032126.1|</Hit_id>
+  <Hit_def>pro-glucagon preproprotein [Mus musculus] &gt;sp|P55095.1| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Mus musculus] &gt;gb|AAH12975.1| Glucagon [Mus musculus] &gt;gb|AAK96898.1| preproglucagon [Mus musculus] &gt;gb|EDL26989.1| glucagon, isoform CRA_b [Mus musculus] &gt;emb|CAA86902.1| preproglucagon [Mus musculus] &gt;dbj|BAB25344.1| unnamed protein product [Mus musculus]</Hit_def>
+  <Hit_accession>NP_032126</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>82</Hit_num>
+  <Hit_id>ref|NP_001003044.1|</Hit_id>
+  <Hit_def>pro-glucagon precursor [Canis lupus familiaris] &gt;sp|P29794.2| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Canis lupus familiaris] &gt;gb|AAL09425.1| preproglucagon [Canis lupus familiaris]</Hit_def>
+  <Hit_accession>NP_001003044</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>28.6336</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>6914.03</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>26</Hsp_query-to>
+      <Hsp_hit-from>146</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>26</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWL</Hsp_qseq>
+      <Hsp_hseq>HADGSFSDEMNTVLDTLATRDFINWL</Hsp_hseq>
+      <Hsp_midline>HA+G F  +    L+  A  +FI WL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>83</Hit_num>
+  <Hit_id>ref|XP_045414998.1|</Hit_id>
+  <Hit_def>pro-glucagon [Lemur catta]</Hit_def>
+  <Hit_accession>XP_045414998</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>84</Hit_num>
+  <Hit_id>ref|XP_055430713.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Bubalus kerabau]</Hit_def>
+  <Hit_accession>XP_055430713</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>85</Hit_num>
+  <Hit_id>ref|XP_032493339.1|</Hit_id>
+  <Hit_def>glucagon isoform X2 [Phocoena sinus] &gt;ref|XP_065736913.1| pro-glucagon isoform X1 [Phocoena phocoena]</Hit_def>
+  <Hit_accession>XP_032493339</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>86</Hit_num>
+  <Hit_id>ref|XP_033268499.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Orcinus orca] &gt;ref|XP_033716238.1| pro-glucagon isoform X1 [Tursiops truncatus] &gt;ref|XP_067595989.1| pro-glucagon isoform X1 [Pseudorca crassidens]</Hit_def>
+  <Hit_accession>XP_033268499</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>87</Hit_num>
+  <Hit_id>ref|XP_077010127.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Tamandua tetradactyla]</Hit_def>
+  <Hit_accession>XP_077010127</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>29.906</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>2545.67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>26</Hsp_query-to>
+      <Hsp_hit-from>146</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>26</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWL</Hsp_qseq>
+      <Hsp_hseq>HADGSFSDEINTVLDNLATQDFINWL</Hsp_hseq>
+      <Hsp_midline>HA+G F  ++   L+  A  +FI WL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>88</Hit_num>
+  <Hit_id>ref|XP_042555445.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Dipodomys spectabilis]</Hit_def>
+  <Hit_accession>XP_042555445</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>89</Hit_num>
+  <Hit_id>ref|XP_032736166.1|</Hit_id>
+  <Hit_def>glucagon isoform X1 [Lontra canadensis] &gt;ref|XP_032736167.1| glucagon isoform X1 [Lontra canadensis]</Hit_def>
+  <Hit_accession>XP_032736166</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>90</Hit_num>
+  <Hit_id>ref|NP_002045.1|</Hit_id>
+  <Hit_def>pro-glucagon preproprotein [Homo sapiens] &gt;ref|XP_002812569.2| pro-glucagon [Pongo abelii] &gt;ref|XP_003309324.2| pro-glucagon [Pan troglodytes] &gt;ref|XP_032611454.1| pro-glucagon [Hylobates moloch] &gt;ref|XP_055147931.1| pro-glucagon [Symphalangus syndactylus] &gt;sp|P01275.3| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; AltName: Full=Incretin hormone; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Homo sapiens] &gt;gb|AAX42010.1| glucagon [synthetic construct] &gt;emb|SJX28562.1| unnamed protein product, partial [Human ORFeome Gateway entry vector] &gt;gb|AAA52567.1| preproglucagon [Homo sapiens] &gt;gb|AAH05278.1| Glucagon [Homo sapiens] &gt;gb|AAP35459.1| glucagon [Homo sapiens]</Hit_def>
+  <Hit_accession>NP_002045</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>91</Hit_num>
+  <Hit_id>ref|XP_034862533.1|</Hit_id>
+  <Hit_def>glucagon isoform X1 [Mirounga leonina] &gt;ref|XP_064441848.1| pro-glucagon isoform X2 [Mirounga angustirostris]</Hit_def>
+  <Hit_accession>XP_034862533</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>92</Hit_num>
+  <Hit_id>ref|NP_999489.1|</Hit_id>
+  <Hit_def>pro-glucagon precursor [Sus scrofa] &gt;ref|XP_005671939.2| glucagon isoform X1 [Sus scrofa] &gt;sp|P01274.4| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Sus scrofa] &gt;gb|AAO88211.1| proglucagon [Sus scrofa]</Hit_def>
+  <Hit_accession>NP_999489</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>93</Hit_num>
+  <Hit_id>ref|XP_034500162.1|</Hit_id>
+  <Hit_def>glucagon isoform X1 [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>XP_034500162</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>94</Hit_num>
+  <Hit_id>sp|P01273.2|</Hit_id>
+  <Hit_def>RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Mesocricetus auratus] &gt;gb|AAA37074.1| preproglucagon [Mesocricetus auratus]</Hit_def>
+  <Hit_accession>P01273</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>95</Hit_num>
+  <Hit_id>ref|XP_057602764.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Hippopotamus amphibius kiboko]</Hit_def>
+  <Hit_accession>XP_057602764</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>96</Hit_num>
+  <Hit_id>ref|XP_036109821.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Molossus molossus]</Hit_def>
+  <Hit_accession>XP_036109821</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>97</Hit_num>
+  <Hit_id>ref|XP_044522499.1|</Hit_id>
+  <Hit_def>pro-glucagon [Gracilinanus agilis]</Hit_def>
+  <Hit_accession>XP_044522499</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>128</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>28.6336</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>6914.03</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>26</Hsp_query-to>
+      <Hsp_hit-from>147</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>26</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWL</Hsp_qseq>
+      <Hsp_hseq>HADGSFSDEMNTVLDTLATRDFINWL</Hsp_hseq>
+      <Hsp_midline>HA+G F  +    L+  A  +FI WL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>98</Hit_num>
+  <Hit_id>ref|XP_069328132.1|</Hit_id>
+  <Hit_def>pro-glucagon [Eulemur rufifrons]</Hit_def>
+  <Hit_accession>XP_069328132</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>99</Hit_num>
+  <Hit_id>ref|XP_041487585.1|</Hit_id>
+  <Hit_def>pro-glucagon isoform X1 [Microtus oregoni]</Hit_def>
+  <Hit_accession>XP_041487585</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>100</Hit_num>
+  <Hit_id>ref|NP_001166423.1|</Hit_id>
+  <Hit_def>pro-glucagon precursor [Cavia porcellus] &gt;sp|P05110.1| RecName: Full=Pro-glucagon; Contains: RecName: Full=Glicentin; Contains: RecName: Full=Glicentin-related polypeptide; Short=GRPP; Contains: RecName: Full=Oxyntomodulin; Short=OXM; Short=OXY; Contains: RecName: Full=Glucagon; Contains: RecName: Full=Glucagon-like peptide 1; Short=GLP-1; Contains: RecName: Full=Glucagon-like peptide 1(7-37); Short=GLP-1(7-37); Contains: RecName: Full=Glucagon-like peptide 1(7-36); Short=GLP-1(7-36); Contains: RecName: Full=Glucagon-like peptide 2; Short=GLP-2; Flags: Precursor [Cavia porcellus] &gt;dbj|BAA00010.1| preproglucagon [Cavia porcellus]</Hit_def>
+  <Hit_accession>NP_001166423</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.3462</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>8.83296e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>30</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>127</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_qseq>
+      <Hsp_hseq>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_hseq>
+      <Hsp_midline>HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>964008091</Statistics_db-num>
+      <Statistics_db-len>801314908</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.11</Statistics_kappa>
+      <Statistics_lambda>0.294</Statistics_lambda>
+      <Statistics_entropy>0.61</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
