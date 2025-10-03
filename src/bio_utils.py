@@ -4,11 +4,9 @@
 import pandas as pd
 import subprocess
 import os
+import numpy as np
 from pathlib import Path
 from Bio import SeqIO
-from Bio import SeqIO
-import pandas as pd
-from pathlib import Path
 from typing import Optional, Dict, Any
 
 def save_df_as_fasta(dataframe: pd.DataFrame, id_col: str, seq_col: str, output_file: Path):
@@ -189,3 +187,66 @@ def inspect_fasta_file(file_path: Path, verbose: bool = True) -> Optional[Dict[s
             print(f"  - WARNING: Found duplicate IDs: {results['duplicate_ids']}")
 
     return results
+
+
+def fasta_to_dataframe(filename: str) -> pd.DataFrame:
+    """
+    Loads sequences from a FASTA file into a pandas DataFrame.
+
+    Args:
+        filename (str): The path to the FASTA file.
+
+    Returns:
+        pd.DataFrame: A DataFrame with 'id', 'description', and 'sequence' columns.
+    """
+    # SeqIO.parse is used to read the file.
+    # 'fasta' indicates the file format.
+    # This returns a generator, which is memory-efficient.
+    fasta_sequences = SeqIO.parse(open(filename), 'fasta')
+    
+    # Create lists to store the data for each sequence
+    ids = []
+    descriptions = []
+    sequences = []
+    
+    # Iterate over each record in the FASTA file
+    for seq_record in fasta_sequences:
+        ids.append(seq_record.id)
+        descriptions.append(seq_record.description)
+        sequences.append(str(seq_record.seq))
+    
+    # Create a dictionary from the lists
+    data = {
+        'id': ids,
+        'description': descriptions,
+        'sequence': sequences
+    }
+    
+    # Convert the dictionary into a pandas DataFrame
+    df = pd.DataFrame(data)
+    
+    return df
+
+# --- Función para calcular la matriz de identidad ---
+def calculate_identity_matrix(sequences):
+    """
+    Calcula una matriz de identidad por pares para una lista de secuencias de igual longitud.
+    """
+    n_sequences = len(sequences)
+    identity_matrix = np.zeros((n_sequences, n_sequences))
+    
+    for i in range(n_sequences):
+        for j in range(i, n_sequences):
+            # Calculte la identidad entre la secuencia i y j
+            seq1 = sequences[i]
+            seq2 = sequences[j]
+            if len(seq1) == 0: continue # Evitar división por cero
+            
+            score = sum(1 for a, b in zip(seq1, seq2) if a == b)
+            identity = score / len(seq1)
+            
+            # La matriz es simétrica
+            identity_matrix[i, j] = identity
+            identity_matrix[j, i] = identity
+            
+    return identity_matrix
