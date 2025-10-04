@@ -9,7 +9,9 @@ from pathlib import Path
 from Bio import SeqIO
 from typing import Optional, Dict, Any
 
-def save_df_as_fasta(dataframe: pd.DataFrame, id_col: str, seq_col: str, output_file: Path):
+IUPAC_AMINO_ACID_SET = set("ACDEFGHIKLMNPQRSTVWYBXZJUO-*")  # IUPAC amino acids + gap/stop
+
+def save_df_as_fasta(dataframe: pd.DataFrame, id_col: str, seq_col: str, output_file: Path, verbose: bool = True):
     """
     Saves specified columns from a DataFrame into a FASTA formatted file.
 
@@ -31,8 +33,9 @@ def save_df_as_fasta(dataframe: pd.DataFrame, id_col: str, seq_col: str, output_
                     # Write the header and sequence to the file
                     fasta_file.write(f">{identifier}\n")
                     fasta_file.write(f"{sequence}\n")
-        
-        print(f"Success! DataFrame has been saved to '{output_file}'.")
+
+        if verbose:
+            print(f"Success! DataFrame has been saved to '{output_file}'.")
 
     except KeyError as e:
         print(f"Error: Column {e} not found. Please check your column names.")
@@ -96,7 +99,7 @@ from Bio import SeqIO
 from pathlib import Path
 from typing import Optional, Dict, Any
 
-def inspect_fasta_file(file_path: Path, verbose: bool = True) -> Optional[Dict[str, Any]]:
+def inspect_fasta_file(file_path: Path, iupac: bool = False, verbose: bool = True) -> Optional[Dict[str, Any]]:
     """
     Inspects a FASTA file for format, critical errors, and warnings.
 
@@ -125,8 +128,10 @@ def inspect_fasta_file(file_path: Path, verbose: bool = True) -> Optional[Dict[s
     empty_sequences = []
     is_valid = True  # Tracks critical errors
     has_duplicates = False # Tracks warnings
-
-    valid_chars = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ-*")
+    if iupac:
+        valid_chars = IUPAC_AMINO_ACID_SET # IUPAC amino acids + gap/stop
+    else:
+        valid_chars = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ-*")
 
     try:
         with open(file_path, "r") as handle:
