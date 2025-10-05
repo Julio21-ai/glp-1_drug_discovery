@@ -64,7 +64,7 @@ def plot_pca_2d(pca_df, pc_x='PC1', pc_y='PC2', color_by=None, label='Values', f
                 )
         plt.colorbar(scatter, label=label)
     else:
-        plt.scatter(x=pca_df[pc_x], y=pca_df[pc_y], c='red' )
+        plt.scatter(x=pca_df[pc_x], y=pca_df[pc_y], c='blue' )
     
     plt.xlabel(f'{pc_x}')
     plt.ylabel(f'{pc_y}')
