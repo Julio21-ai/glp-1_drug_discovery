@@ -4,7 +4,6 @@ import seaborn as sns
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
-
 def identity_heatmap(identity_matrix, 
                           title,
                           cmap='viridis',
@@ -74,28 +73,43 @@ def plot_pca_2d(pca_df, pc_x='PC1', pc_y='PC2', color_by=None, label='Values', f
     plt.grid(True)
     plt.show()
 
-
-
-
-
-def plot_pca_3d(pca_df, pc_x='PC1', pc_y='PC2', pc_z='PC3', color_by=None, label='Values',
-                figsize=(10, 8), title='Visualización de 3 Componentes Principales (PCA)',
-                cmap='viridis', xlim=None, ylim=None, zlim=None):
+def plot_pca_3d(
+    pca_df,
+    pc_x='PC1',
+    pc_y='PC2',
+    pc_z='PC3',
+    color_by=None,
+    label='Values',
+    figsize=(10, 8),
+    title='Visualización de 3 Componentes Principales (PCA)',
+    cmap='viridis',
+    xlim=None,
+    ylim=None,
+    zlim=None,
+    ax=None 
+):
     """
-    Genera y muestra un gráfico de dispersión 3D de los Componentes Principales.
+    Genera y muestra (o agrega a) un gráfico de dispersión 3D de los Componentes Principales.
 
     Args:
         pca_df (pd.DataFrame): DataFrame con columnas de componentes principales.
         pc_x, pc_y, pc_z (str): Nombres de las columnas para los ejes X, Y, Z.
         color_by (str, optional): Columna para colorear los puntos.
         label (str): Etiqueta de la barra de color.
-        figsize (tuple): Tamaño del gráfico.
+        figsize (tuple): Tamaño del gráfico (solo se usa si no se pasa 'ax').
         title (str): Título del gráfico.
         cmap (str): Mapa de colores.
         xlim, ylim, zlim (tuple, optional): Límites de los ejes (min, max).
+        ax (Axes3D, optional): Eje 3D existente donde dibujar el gráfico.
     """
-    fig = plt.figure(figsize=figsize)
-    ax = fig.add_subplot(111, projection='3d')
+    # Crear figura y eje solo si no se proporcionan
+    own_fig = False
+    if ax is None:
+        fig = plt.figure(figsize=figsize)
+        ax = fig.add_subplot(111, projection='3d')
+        own_fig = True
+    else:
+        fig = ax.get_figure()
 
     # Extraer coordenadas
     x = pca_df[pc_x]
@@ -120,5 +134,7 @@ def plot_pca_3d(pca_df, pc_x='PC1', pc_y='PC2', pc_z='PC3', color_by=None, label
     if ylim: ax.set_ylim(ylim)
     if zlim: ax.set_zlim(zlim)
 
-    plt.tight_layout()
-    plt.show()
+    # Mostrar solo si la figura pertenece a esta función
+    if own_fig:
+        plt.tight_layout()
+        plt.show()
