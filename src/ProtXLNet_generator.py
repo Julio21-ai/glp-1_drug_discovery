@@ -129,9 +129,8 @@ def generate_peptide_variants_fast(
         inputs = tokenizer(batch_prompts, return_tensors="pt",
                             padding=True, truncation=True, max_length=max_length).to(device)
         max_input_length = max(inputs["input_ids"].shape[1], max_length)
-##
-
-        print(f"\nshape len: {inputs['input_ids'].shape[1]}")
+##        --Debug--
+##        print(f"\nshape len: {inputs['input_ids'].shape[1]}")
 ##
         with torch.no_grad():
             outputs = model.generate(
