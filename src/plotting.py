@@ -138,3 +138,104 @@ def plot_pca_3d(
     if own_fig:
         plt.tight_layout()
         plt.show()
+
+
+def clasificar_y_graficar_cuantiles(
+    df_input, 
+    columna_valor, 
+    columna_id=None, 
+    cuantiles=(0.33, 0.66), 
+    categorias=("Baja", "Media", "Alta"),
+    top_n=15,
+    palette='Set2',  # Puede ser dict o string de paleta estándar
+    titulo_distribucion=None,  # Título del histograma
+    titulo_ordenado=None,      # Título del gráfico ordenado
+    incluir_grafico_ordenado=True  # Mostrar o no el scatter ordenado
+):
+    """
+    Clasifica una columna numérica basada en cuantiles, genera gráficos 
+    (opcionalmente uno o dos) y muestra resumen estadístico.
+
+    Parámetros nuevos
+    -----------------
+    titulo_distribucion : str o None
+        Título del histograma. Si None, se genera uno automáticamente.
+    titulo_ordenado : str o None
+        Título del gráfico ordenado. Si None, se genera automáticamente.
+    incluir_grafico_ordenado : bool
+        Si True, se muestra el scatter de valores ordenados.
+    """
+
+    assert columna_valor in df_input.columns, f"El DataFrame debe contener la columna '{columna_valor}'"
+    assert len(categorias) == 3, "Actualmente esta función está configurada para 3 categorías."
+
+    df = df_input.copy()
+
+    # Convertir paleta si es string a un dict mapeado a las categorías
+    if isinstance(palette, str):
+        colores = sns.color_palette(palette, n_colors=3)
+        palette = {cat: col for cat, col in zip(categorias, colores)}
+
+    # Calcular cuantiles
+    q_low, q_high = df[columna_valor].quantile(list(cuantiles))
+
+    # Crear función de clasificación
+    def clasificar(valor):
+        if valor < q_low:
+            return categorias[0]
+        elif valor < q_high:
+            return categorias[1]
+        else:
+            return categorias[2]
+
+    # Asignar categoría
+    df['Potencia'] = df[columna_valor].apply(clasificar)
+
+    # Definir títulos automáticos si no se proporcionan
+    if titulo_distribucion is None:
+        titulo_distribucion = f'Distribución de {columna_valor} por Categoría'
+    if titulo_ordenado is None:
+        titulo_ordenado = f'{columna_valor} Ordenado con Clasificación'
+
+    # ----- GRAFICOS -----
+    n_cols = 2 if incluir_grafico_ordenado else 1
+    fig, axes = plt.subplots(1, n_cols, figsize=(8*n_cols, 6))
+
+    # Si hay solo un gráfico, seaborn necesita axis como single obj
+    if n_cols == 1:
+        axes = [axes]
+
+    # Histograma
+    sns.histplot(data=df, x=columna_valor, hue='Potencia', palette=palette, bins=25, alpha=0.8, kde=True, ax=axes[0])
+    axes[0].axvline(q_low, color='black', linestyle='--', linewidth=1, label=f'Q{int(cuantiles[0]*100)} = {q_low:.2f}')
+    axes[0].axvline(q_high, color='black', linestyle='--', linewidth=1, label=f'Q{int(cuantiles[1]*100)} = {q_high:.2f}')
+    axes[0].set_title(titulo_distribucion)
+    axes[0].set_xlabel(columna_valor)
+    axes[0].set_ylabel('Frecuencia')
+    axes[0].legend()
+
+    # Scatter ordenado
+    if incluir_grafico_ordenado:
+        ordenado = df.sort_values(columna_valor).reset_index(drop=True)
+        ordenado['Orden'] = range(1, len(ordenado) + 1)
+        sns.scatterplot(data=ordenado, x='Orden', y=columna_valor, hue='Potencia', palette=palette, s=60, ax=axes[1])
+        axes[1].set_title(titulo_ordenado)
+        axes[1].set_xlabel(f'Orden (de menor a mayor {columna_valor})')
+        axes[1].set_ylabel(columna_valor)
+        axes[1].legend(loc='lower right')
+
+    plt.tight_layout()
+    plt.show()
+
+    # ----- RESUMEN -----
+    resumen = df.groupby('Potencia')[columna_valor].agg(['count', 'mean', 'min', 'max']).rename(columns={'count':'n','mean':'promedio'})
+    print('\nResumen por categoría:')
+    print(resumen)
+
+    # ----- TOP N -----
+    if columna_id:
+        top_cat_max = categorias[-1]  # última categoría es la más alta
+        top = df[df['Potencia']==top_cat_max].sort_values(columna_valor, ascending=False).head(top_n)
+        print(f'\nTop {top_n} registros de categoría "{top_cat_max}":')
+        display(top[[columna_id, columna_valor, 'Potencia']])
+
