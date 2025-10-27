@@ -150,7 +150,9 @@ def clasificar_y_graficar_cuantiles(
     palette='Set2',  # Puede ser dict o string de paleta estándar
     titulo_distribucion=None,  # Título del histograma
     titulo_ordenado=None,      # Título del gráfico ordenado
-    incluir_grafico_ordenado=True  # Mostrar o no el scatter ordenado
+    incluir_grafico_ordenado=True,  # Mostrar o no el scatter ordenado
+    resumen=True,
+    mostrar_top=True
 ):
     """
     Clasifica una columna numérica basada en cuantiles, genera gráficos 
@@ -199,7 +201,7 @@ def clasificar_y_graficar_cuantiles(
 
     # ----- GRAFICOS -----
     n_cols = 2 if incluir_grafico_ordenado else 1
-    fig, axes = plt.subplots(1, n_cols, figsize=(8*n_cols, 6))
+    fig, axes = plt.subplots(1, n_cols, figsize=(8*n_cols, 5))
 
     # Si hay solo un gráfico, seaborn necesita axis como single obj
     if n_cols == 1:
@@ -228,12 +230,13 @@ def clasificar_y_graficar_cuantiles(
     plt.show()
 
     # ----- RESUMEN -----
-    resumen = df.groupby('Potencia')[columna_valor].agg(['count', 'mean', 'min', 'max']).rename(columns={'count':'n','mean':'promedio'})
-    print('\nResumen por categoría:')
-    print(resumen)
+    if resumen:
+        resumen = df.groupby('Potencia')[columna_valor].agg(['count', 'mean', 'min', 'max']).rename(columns={'count':'n','mean':'promedio'})
+        print('\nResumen por categoría:')
+        print(resumen)
 
     # ----- TOP N -----
-    if columna_id:
+    if mostrar_top and columna_id is not None:
         top_cat_max = categorias[-1]  # última categoría es la más alta
         top = df[df['Potencia']==top_cat_max].sort_values(columna_valor, ascending=False).head(top_n)
         print(f'\nTop {top_n} registros de categoría "{top_cat_max}":')
