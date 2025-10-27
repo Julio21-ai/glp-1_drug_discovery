@@ -68,6 +68,7 @@ def compute_peptide_features(input_fasta_file, descriptors, settings_json_file, 
 
     # Combina todos los dataframes de resultados en uno solo
     combined_df = results[0][1]
+
     for desc, df in results[1:]:
         combined_df = combined_df.merge(df, left_index=True, right_index=True, how="inner")
 
@@ -77,11 +78,11 @@ def compute_peptide_features(input_fasta_file, descriptors, settings_json_file, 
         combined_df.to_csv(output_csv, index=False)
         print(f"Resultados guardados en {output_csv}")
 
-    # Opcional: Verificar si se perdieron secuencias durante el merge
-    expected_ids = results[0][1].index
-    for desc, df in results[1:]:
-        lost = set(expected_ids) - set(df.index)
-        if lost:
-            print(f"En el descriptor {desc} faltaron {len(lost)} secuencias: {list(lost)[:3]}...")
+    # # Opcional: Verificar si se perdieron secuencias durante el merge
+    # expected_ids = results[0][1].index
+    # for desc, df in results[1:]:
+    #     lost = set(expected_ids) - set(df.index)
+    #     if lost:
+    #         print(f"En el descriptor {desc} faltaron {len(lost)} secuencias: {list(lost)[:3]}...")
 
     return combined_df
