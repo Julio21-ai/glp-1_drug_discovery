@@ -40,11 +40,12 @@ def compute_single_descriptor(input_fasta_file, descriptor, settings_json_file=N
 
     try:
         protein.get_descriptor(descriptor)
+        df = protein.encodings.reset_index()
     except Exception as e:
-        print(f"Error al calcular {descriptor}: {e}")
+        print(f"Error al calcular {descriptor}: {protein.encodings} {e}")
         return None
 
-    df = protein.encodings.reset_index()
+
 
     if df.empty:
         print(f"Descriptor {descriptor} no generó resultados.")

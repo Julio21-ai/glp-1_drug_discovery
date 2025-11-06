@@ -7,6 +7,7 @@ from accelerate import Accelerator
 # Lista estándar de aminoácidos
 
 
+
 def generate_with_protgpt2_pipeline(
     prompt_sequences: list,
     model_name_or_path: str = "nferruz/ProtGPT2",    
@@ -114,9 +115,10 @@ def generate_with_protgpt2_pipeline(
                 clean = generated_text.replace(" ", "").replace("<|endoftext|>", "").replace("\n", "").strip()
                 
                 # Tu lógica de truncamiento final
-                if len(clean) > max_length: # Corregí la lógica aquí
+                if len(clean) > max_length:
                     clean = clean[:max_length]
-                    
+                if len(clean) < min_length:
+                    continue
                 unique_variants.add(clean)
 
         # Limpieza de memoria
