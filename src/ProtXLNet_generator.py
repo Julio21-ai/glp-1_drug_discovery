@@ -8,11 +8,12 @@ from transformers import XLNetTokenizer, XLNetLMHeadModel, pipeline
 from accelerate import Accelerator
 
 # Lista estándar de aminoácidos
-AMINO_ACIDS = list("ACDEFGHIKLMNPQRSTVWY")
+AMINO_ACIDS_STRING = "ACDEFGHIKLMNPQRSTVWY"
+AMINO_ACIDS = list(AMINO_ACIDS_STRING)
 
-# Lista de aminoácidos estándar para realizar las mutaciones.
-# Se usa para asegurar que la mutación introducida sea válida.
-AMINO_ACIDS = list("ACDEFGHIKLMNPQRSTVWY")
+pattern_to_remove = f"[^{AMINO_ACIDS_STRING}]"
+
+
 
 def generate_peptide_variants(
     prompt_sequences: list,
@@ -94,8 +95,6 @@ def generate_peptide_variants(
     print(f"\nGeneración completada. Se encontraron {len(unique_variants)} variantes únicas.")
     return list(unique_variants)
 
-
-
 def generate_peptide_variants_fast(
     prompt_sequences: list,
     model,
@@ -166,8 +165,18 @@ def generate_peptide_variants_fast(
     print(f"\nGeneración completada. Se obtuvieron {len(unique_variants)} variantes únicas.")
     return list(unique_variants)
 
+import random
+import torch
+import re  # <--- CAMBIO: Importar el módulo de expresiones regulares
+from tqdm.auto import tqdm
+from transformers import XLNetTokenizer, XLNetLMHeadModel, pipeline
+from accelerate import Accelerator
 
-
+# Lista estándar de aminoácidos
+AMINO_ACIDS_STRING = "ACDEFGHIKLMNPQRSTVWY"
+AMINO_ACIDS = list(AMINO_ACIDS_STRING)
+# El patrón de regex para eliminar cualquier cosa que NO sea un AA
+pattern_to_remove = f"[^{AMINO_ACIDS_STRING}]"
 
 
 def generate_with_protxlnet_pipeline(
@@ -192,34 +201,36 @@ def generate_with_protxlnet_pipeline(
     device = accelerator.device
     print(f"Usando dispositivo: {device}")
 
-    # Configurar el tokenizer primero ---
-    # Lo cargamos por separado para poder ajustar sus propiedades especiales
-    tokenizer = XLNetTokenizer.from_pretrained(ruta_modelo_protxlnet,
-                                                max_length=max_length,
-                                                padding_side='left',
-                                                model_max_length=max_length,
-                                                model_min_length=min_length,
-                                                eos_token_id=0,
-                                                truncation=True,
-                                       )
-    tokenizer.eos_token_id = 0
-    tokenizer.pad_token = tokenizer.eos_token
-   
+    # CAMBIO: Inicializar a None para el bloque 'finally'
+    tokenizer = None
+    generator = None
+
     try: 
-        # Inicializar el pipeline
-        # Pasamos el modelo, el tokenizer ya configurado y el dispositivo.
+        # --- CAMBIO: Configurar el tokenizer (forma más limpia) ---
+        print("Cargando tokenizer de ProtXLNet...")
+        tokenizer = XLNetTokenizer.from_pretrained(
+            ruta_modelo_protxlnet,
+            # No pasamos max/min length aquí
+        )
+
+        # Configuración ESENCIAL para generación: padding a la izquierda
+        tokenizer.padding_side = 'left'
+        if tokenizer.pad_token is None:
+             tokenizer.pad_token = tokenizer.eos_token        
+        
+        # --- Cargar pipeline ---
         print("Cargando pipeline de generación...")
         generator = pipeline(
             "text-generation",
+            # El modelo se carga aquí
             model=XLNetLMHeadModel.from_pretrained(ruta_modelo_protxlnet),
-            tokenizer=tokenizer,
+            tokenizer=tokenizer, # Pasamos el tokenizer ya configurado
             device=device
         )
         print("Pipeline cargado.")
 
         unique_variants = set()
     
-        # PreGenerar todas las mutaciones (Esta lógica se mantiene igual que con proxlnet)
         print("Preparando las secuencias iniciales...")
         mutated_prompts = set()
         for i in tqdm(range(len(prompt_sequences))):
@@ -232,68 +243,63 @@ def generate_with_protxlnet_pipeline(
                 if apply_truncation and random.random() < truncation_prob and len(base_seq) > 1:
                     cut_idx = random.randint(min(start_cut_pos, len(base_seq) - 2), len(base_seq) - 2)
                     sequence_to_mutate = base_seq[0:cut_idx]
-                    # (Opcional) Los prints de debug se pueden quitar para más velocidad
-                    # print(f"Secuencia truncada a partir del índice {cut_idx}: {base_seq}")
-                    # print(f"secuencia original: {base_seq}, secuencia truncada: {sequence_to_mutate} ")
 
                 seq_list = list(sequence_to_mutate)
                 idx = random.randrange(len(seq_list))
                 aa = seq_list[idx]
                 seq_list[idx] = random.choice([x for x in AMINO_ACIDS if x != aa])
-                mutated_prompts.add(" ".join(seq_list))
+                
+                mutated_prompts.add(" ".join(seq_list)) 
 
         print(f"Generando {len(mutated_prompts)} variantes (el pipeline manejará los lotes)...")
 
-        formatted_prompts = [f"{seq}" for seq in mutated_prompts]
+        formatted_prompts = list(mutated_prompts)
 
-        # Nos pasamos todos los parámetros de generate() directamente al pipeline.
         gen_kwargs = dict(
             min_length=min_length,
-            max_length=max_length,         # El pipeline maneja esto como longitud total
-            max_new_tokens=max_new_tokens, # Tu parámetro original
+            max_length=max_length,         
+            max_new_tokens=max_new_tokens, 
             num_return_sequences=num_return_sequences,
             do_sample=True,
             temperature=temperature,
             top_k=top_k,
             top_p=top_p,
-            pad_token_id=tokenizer.eos_token_id, # Importante pasarlo o explota
+            pad_token_id=tokenizer.pad_token_id, 
             repetition_penalty=repetition_penalty,
-            # El pipeline no trunca automáticamente los prompts largos
         )
 
-        # El pipeline nos mostrará su propia barra de progreso si tqdm está instalado
         outputs = generator(
             formatted_prompts, 
             batch_size=batch_size, 
             **gen_kwargs
         )
 
-        # La salida es: List[List[Dict[str, str]]]
-        # Lista externa: un elemento por cada prompt de entrada
-        # Lista interna: un elemento por cada num_return_sequences
-        # Diccionario: {'generated_text': '...'}
-        
         print("Procesando salidas...")
         for prompt_outputs in tqdm(outputs, desc="Procesando"):
-            for seq_dict in prompt_outputs: # Iterar sobre las num_return_sequences
+            for seq_dict in prompt_outputs:
                 generated_text = seq_dict['generated_text']
                 
-                # Tu lógica de limpieza original
-                clean = generated_text.replace(" ", "").replace("<|endoftext|>", "").replace("\n", "").strip()
+                # 1. Quitar espacios y saltos de línea
+                no_spaces_text = generated_text.replace(" ", "").replace("\n", "").strip()
+                # 2. Usar regex para quitar CUALQUIER OTRA COSA que no sea un AA
+                clean = re.sub(pattern_to_remove, '', no_spaces_text)
                 
-                # Tu lógica de truncamiento final
-                if len(clean) > max_length: # Corregí la lógica aquí
+                # Truncamiento final (tu lógica es correcta)
+                if len(clean) > max_length:
                     clean = clean[:max_length]
+                if len(clean) < min_length:
+                    continue                    
                     
-            unique_variants.add(clean)
+                unique_variants.add(clean)
 
     finally:
-        # Limpieza de memoria
+        # --- 5. Limpieza de memoria ---
         if device.type == 'cuda':
             torch.cuda.empty_cache()
 
+        # Usamos los 'if' para evitar errores si algo falló al cargar
         if generator is not None:
-            del generator # El pipeline contiene el modelo no se debe eliminar por separado
+            del generator
         if tokenizer is not None:
             del tokenizer
         if accelerator is not None: 
