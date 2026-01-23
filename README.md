@@ -1,3 +1,69 @@
+# GLP-1 Project Environment Setup
+
+Este documento detalla las instrucciones para configurar el entorno de desarrollo del proyecto, incluyendo herramientas de bioinformática, y modelos de Machine Learning.
+
+Las instrucciones están optimizadas para **WSL (Windows Subsystem for Linux)**, integrando compilación de herramientas externas, entornos Conda y aceleración por GPU.
+
+##  Prerrequisitos
+
+* **WSL 2** (Ubuntu/Debian recomendado) instalado en Windows.
+* **Anaconda** o **Miniconda**
+* **Drivers de NVIDIA** actualizados en Windows
+
+---
+
+##  Guía de Instalación
+
+
+### 1. Dependencias del Sistema y CD-HIT (WSL)
+
+https://github.com/weizhongli/cdhit
+
+
+La herramienta `CD-HIT` debe compilarse desde el código fuente y requiere librerías base del sistema.
+Desde la linea de comandos de WSL ejecutar:
+
+```bash
+# 1.1 Actualizar e instalar compilador y librerías base 
+sudo apt-get update
+sudo apt-get install build-essential zlib1g-dev git -y
+
+# 1.2 Clonar y compilar CD-HIT
+cd ~
+git clone [https://github.com/weizhongli/cdhit.git](https://github.com/weizhongli/cdhit.git)
+cd cdhit
+make
+
+# 1.3 Instalar  (para usar 'cd-hit' globalmente)
+sudo make install
+```
+
+2. Creación del Entorno Virtual
+Entorno aislado con Python 3.11:
+```Bash
+conda create --name GLP-1 python=3.11
+conda activate GLP-1
+```
+3. Instalación de Paquetes Conda
+Instalación de librerías científicas, herramientas bioinformáticas y soporte CUDA.
+
+```Bash
+# Herramientas base de análisis y visualización
+conda install networkx sklearn seaborn -y
+
+# Bioinformática y Química Computacional
+conda install biopython -y
+conda install -c rdkit rdkit -y
+conda install -c salilab dssp -y
+conda install -c bioconda msms -y
+
+# Aceleración por GPU (CUDA Runtime 12.8)
+conda install nvidia/label/cuda-12.8.1::cuda-runtime
+```
+
+4. Instalación de Paquetes Pip
+Instalación de librerías para Machine Learning, MLOps y utilidades específicas.
+
 ```Bash
 # Herramientas CLI y utilidades de secuencias
 pip install iFeatureOmegaCLI
