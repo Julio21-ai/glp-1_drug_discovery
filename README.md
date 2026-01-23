@@ -1,61 +1,56 @@
-# Accelerated Drug Discovery
+```Bash
+# Herramientas CLI y utilidades de secuencias
+pip install iFeatureOmegaCLI
+pip install logomaker
+pip install tqdm ipywidgets sentencepiece
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+# Optimización Bayesiana y Ray Tune
+pip install "bayesian-optimization"
+pip install ray "ray[tune]"
 
-Cancer drug development using AI
+# Machine Learning & Deep Learning (Transformers, PyCaret, Scikit-learn)
+pip install git+[https://github.com/huggingface/transformers](https://github.com/huggingface/transformers)
+pip install datasets accelerate evaluate
+pip install scikit-learn
+pip install "pycaret[models,tuners,parallel,analysis]"
 
-## Project Organization
+# MLOps y Monitoreo
+pip install wandb
+pip install tensorboard
 
+# Kernel para Jupyter Notebooks
+pip install ipykernel
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         accelerated_drug_discovery and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── accelerated_drug_discovery   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes accelerated_drug_discovery a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+5. Configuración Manual: iFeatureOmega
+El instalador automático de iFeatureOmega presenta conflictos de rutas en versiones recientes de Python. 
+
+Clonar la biblioteca CLI: 
+```
+git clone https://github.com/Superzchen/iFeatureOmega-CLI
 ```
 
---------
+Copiar la carpeta entera dentro del directorio site-packages del entorno conda activo.
 
+```Bash
+cp -r iFeatureOmega-CLI $CONDA_PREFIX/lib/python3.11/site-packages/
+```
+
+6. Verificación y Uso
+Para confirmar que la instalación fue exitosa:
+
+Registrar el Kernel en Jupyter:
+
+```Bash
+python -m ipykernel install --user --name=GLP-1 --display-name "Python (GLP-1)"
+```
+Verificar CD-HIT:
+
+```Bash
+cd-hit --help
+(Debería mostrar las opciones de ayuda).
+```
+Verificar GPU (PyTorch/CUDA):
+
+```Bash
+python -c "import torch; print(f'CUDA disponible: {torch.cuda.is_available()}')"
+```
