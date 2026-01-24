@@ -49,7 +49,7 @@ Instalación de librerías científicas, herramientas bioinformáticas y soporte
 
 ```Bash
 # Herramientas base de análisis y visualización
-conda install networkx sklearn seaborn -y
+conda install -c conda-forge networkx scikit-learn seaborn -y
 
 # Bioinformática y Química Computacional
 conda install biopython -y
