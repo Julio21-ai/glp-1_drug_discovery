@@ -210,6 +210,7 @@ def generate_with_protxlnet_pipeline(
         print("Cargando tokenizer de ProtXLNet...")
         tokenizer = XLNetTokenizer.from_pretrained(
             ruta_modelo_protxlnet,
+            local_files_only = True,
             # No pasamos max/min length aquí
         )
 
@@ -223,7 +224,7 @@ def generate_with_protxlnet_pipeline(
         generator = pipeline(
             "text-generation",
             # El modelo se carga aquí
-            model=XLNetLMHeadModel.from_pretrained(ruta_modelo_protxlnet),
+            model=XLNetLMHeadModel.from_pretrained(ruta_modelo_protxlnet,local_files_only = True),
             tokenizer=tokenizer, # Pasamos el tokenizer ya configurado
             device=device
         )
@@ -283,9 +284,10 @@ def generate_with_protxlnet_pipeline(
                 no_spaces_text = generated_text.replace(" ", "").replace("\n", "").strip()
                 # 2. Usar regex para quitar CUALQUIER OTRA COSA que no sea un AA
                 clean = re.sub(pattern_to_remove, '', no_spaces_text)
-                
-                # Truncamiento final (tu lógica es correcta)
-                if len(clean) > max_length:
+
+                 
+                # Truncamiento final para asegurar longitud, y filtro de longitud mínima
+                if len(clean) >= max_length:
                     clean = clean[:max_length]
                 if len(clean) < min_length:
                     continue                    
@@ -293,17 +295,13 @@ def generate_with_protxlnet_pipeline(
                 unique_variants.add(clean)
 
     finally:
-        # --- 5. Limpieza de memoria ---
-        if device.type == 'cuda':
-            torch.cuda.empty_cache()
-
-        # Usamos los 'if' para evitar errores si algo falló al cargar
+        
         if generator is not None:
             del generator
         if tokenizer is not None:
             del tokenizer
         if accelerator is not None: 
-            del accelerator
+            del accelerator        
     
     print(f"\nGeneración completada. Se obtuvieron {len(unique_variants)} variantes únicas.")
     return list(unique_variants)
