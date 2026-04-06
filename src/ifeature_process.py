@@ -1,7 +1,8 @@
 # procesador_ifeature.py
 
 # Importaciones necesarias para que las funciones operen de forma independiente.
-from iFeatureOmega import iFeatureOmegaCLI
+import iFeatureOmegaCLI
+#from iFeatureOmega import iFeatureOmegaCLI # des comentar si se instala iFeatureOmega como paquete
 import pandas as pd
 import logging
 from pathlib import Path
@@ -40,16 +41,16 @@ def compute_single_descriptor(input_fasta_file, descriptor, settings_json_file=N
 
     try:
         protein.get_descriptor(descriptor)
-        df = protein.encodings.reset_index()
+        if protein.encodings is None:
+            print(f"Descriptor {descriptor} no generó resultados.")
+            return None
+        df = protein.encodings
+        df.reset_index(inplace=True)
+
+        
     except Exception as e:
         print(f"Error al calcular {descriptor}: {protein.encodings} {e}")
-        return None
-
-
-
-    if df.empty:
-        print(f"Descriptor {descriptor} no generó resultados.")
-        return None
+        return None        
 
     # Normalizar el nombre de la columna ID y ponerla como índice
     df.rename(columns={df.columns[0]: "ID"}, inplace=True)

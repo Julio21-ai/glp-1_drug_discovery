@@ -1,12 +1,8 @@
 import torch
 import random
 from tqdm.auto import tqdm
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline # <--- CAMBIO: Importar pipeline
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from accelerate import Accelerator
-
-# Lista estándar de aminoácidos
-
-
 
 def generate_with_protgpt2_pipeline(
     prompt_sequences: list,
@@ -123,14 +119,12 @@ def generate_with_protgpt2_pipeline(
 
         # Limpieza de memoria
     finally:
-        # Limpieza de memoria
-        if device.type == 'cuda':
-            torch.cuda.empty_cache()
-
         if generator is not None:
             del generator # El pipeline contiene el modelo no se debe eliminar por separado
-        if tokenizer is not None: del tokenizer
-        if accelerator is not None: del accelerator
+        if tokenizer is not None: 
+            del tokenizer
+        if accelerator is not None: 
+            del accelerator       
     
     print(f"\nGeneración completada. Se obtuvieron {len(unique_variants)} variantes únicas.")
     return list(unique_variants)
